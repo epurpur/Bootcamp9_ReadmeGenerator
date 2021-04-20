@@ -1,65 +1,38 @@
 //Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const questionBank = require('./utils/questionBank.js')
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 
-//Create an array of questions for user input
-const questions = [
-    {
-        type: 'input',
-        name: 'name',
-        message: "Enter project name: "
-    },
-    {
-        type: 'input',
-        name: 'name',
-        message: "Write project description: "   
-    }
-    // 'Enter project name: ',
-    // 'Choose license type: ',
-    // 'Write description of project: ',
-    // 'Enter installation instructions: ',
-    // 'Enter project usage information ',
-    // 'Enter project contribution guidelines ',
-    // 'Enter project test instructions '
-];
-
-const licenseChoices = [
-    'Apache License 2.0',
-    'GNU General Public License v3.0',
-    'MIT License',
-    'BSD 2-Clause "Simplified" License',
-    //maybe add other choices?
-]
+console.log(generateMarkdown.markdown('hello'));
+console.log(generateMarkdown.testvar);
 
 //Create a function to write README file
-function writeToFile(fileName, data) {}
-
-//Function to prompt user for input
-const promptUser = () => {
-    return inquirer.prompt([
-        //NEED FOR EACH LOOP HERE FOR EACH PROJECT
-        {
-            type: 'input',
-            name: 'name',
-            message: "Enter project name: "
-        },
-        {
-            type: 'input',
-            name: 'description',
-            message: "Write project description: "   
-        }
-    ])
+const writeToFile = (userInput) => {
+    //write output to README.md file
+    fs.writeFile('README.md', JSON.stringify(userInput), (error) =>
+    error ? console.log('Error!') : console.log('Success!'));  //error handling is a required argument
 }
+
+
+
+//Function to prompt user to answer each question in questionBank
+const promptUser = () => {
+    return inquirer.prompt(questionBank.questionBank)   //questionBank is returned as object so I need to use questionBank property
+}
+
+
 
 //Create a function to initialize app
 const init = () => {
-    console.log('here');
     promptUser()
         .then((answers) =>{
-            console.log(answers);
+            writeToFile(answers)
         })
 }
 
+
+
 // Function call to initialize app
-init();
+// init();
