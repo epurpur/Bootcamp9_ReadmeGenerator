@@ -24,8 +24,10 @@ const promptUser = () => {
 //Create a function to initialize app
 const init = () => {
     promptUser()
-        .then((answers) =>{
-            const markdown = generateMarkdown.generateMarkdown(answers)
+        .then((userInput) =>{
+            //generate markdown, passing in userInput data
+            const markdown = generateMarkdown.generateMarkdown(userInput)
+            //write markdown to output file
             writeToFile(markdown)
         })
 }

@@ -1,7 +1,7 @@
 
   # Project Name:
 
-  MyProj
+  ThePRoj
 
   ## License
 
@@ -9,7 +9,10 @@
 
   ## Table of Contents
 
-    - [Bottom](#bottom)
+    - [Name] (#name)
+    - [License](##bottom)
+    - [Installation] (#installation)
+    - [Usage] (#bottom)
 
   ## Installation
 
@@ -19,7 +22,7 @@
 
   helo
 
-  ## Bottom <a name='bottom'></a>
+  ## Bottom
 
   test
   
