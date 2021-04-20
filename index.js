@@ -5,8 +5,8 @@ const questionBank = require('./utils/questionBank.js')
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
 
-console.log(generateMarkdown.markdown('hello'));
-console.log(generateMarkdown.testvar);
+// console.log(generateMarkdown.markdown('hello'));
+// console.log(generateMarkdown.testvar);
 
 //Create a function to write README file
 const writeToFile = (userInput) => {
@@ -28,11 +28,12 @@ const promptUser = () => {
 const init = () => {
     promptUser()
         .then((answers) =>{
-            writeToFile(answers)
+            const markdown = generateMarkdown.generateMarkdown(answers)
+            writeToFile(markdown)
         })
 }
 
 
 
 // Function call to initialize app
-// init();
+init();
