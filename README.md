@@ -1,7 +1,7 @@
 
   # Project Name:
 
-  Bottom test
+  MyProj
 
   ## License
 
@@ -19,7 +19,7 @@
 
   helo
 
-  ## Bottom {#bottom}
+  ## Bottom <a name='bottom'></a>
 
   test
   

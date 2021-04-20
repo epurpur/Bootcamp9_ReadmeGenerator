@@ -73,7 +73,7 @@ const generateMarkdown = (data) =>  {
 
   helo
 
-  ## Bottom {#bottom}
+  ## Bottom <a name='bottom'></a>
 
   test
   `
