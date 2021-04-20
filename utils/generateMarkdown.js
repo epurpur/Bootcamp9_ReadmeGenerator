@@ -22,30 +22,59 @@ const renderLicenseBadge = (license) => {
 }
 
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+const renderLicenseLink = (license) => {
+  // creates URL to view more information about license
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+  let licenseLinkURL;
+
+  switch (license) {
+    case 'MIT License':
+      licenseLinkURL = 'https://opensource.org/licenses/MIT';
+      break;
+    case 'GNU General Public License v3.0':
+      licenseLinkURL = 'https://www.gnu.org/licenses/gpl-3.0';
+      break;
+    case 'Apache License 2.0':
+      licenseLinkURL = 'https://opensource.org/licenses/Apache-2.0';
+      break;
+    case 'None':
+      licenseLinkURL = '';
+      break;
+    }
+
+  return licenseLinkURL;
+}
+
 
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) =>  {
   
-  const licenseBadge = renderLicenseBadge(data.license)
+  const licenseBadge = renderLicenseBadge(data.license);
+  const licenseLinkURL = renderLicenseLink(data.license);
   
   return `
-  Project Name:
+  # Project Name:
+
   ${data.name}
 
-  License Badge:
-  ${licenseBadge}
+  ## License Badge:
 
-  # testing
-  testing2
+  ${licenseBadge} : [View License](${licenseLinkURL})
 
-  testing3
+  ## Table of Contents
+
+
+  ## Installation
+
+  yes
+
+  ## Usage
+
+  helo
+
+  ## License
+
+  test
   `
 
 }
