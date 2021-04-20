@@ -33,10 +33,11 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) =>  {
   
-  const licenseBadge = renderLicenseBadge(name.license)
+  const licenseBadge = renderLicenseBadge(data.license)
+  
   return `
   Project Name:
-  # ${data.name}
+  ${data.name}
 
   License Badge:
   ${licenseBadge}
