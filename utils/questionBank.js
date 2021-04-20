@@ -14,9 +14,9 @@ exports.questionBank = [
             'Apache License 2.0',
             'GNU General Public License v3.0',
             'MIT License',
-            'BSD 2-Clause "Simplified" License',
+            'None'
         ],
-        default: 'MIT License'
+        default: 'None'
     },
     // {
     //     type: 'input',

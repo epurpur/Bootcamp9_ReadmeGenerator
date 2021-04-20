@@ -5,13 +5,10 @@ const questionBank = require('./utils/questionBank.js')
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
 
-// console.log(generateMarkdown.markdown('hello'));
-// console.log(generateMarkdown.testvar);
-
 //Create a function to write README file
 const writeToFile = (userInput) => {
     //write output to README.md file
-    fs.writeFile('README.md', myMD, (error) =>
+    fs.writeFile('README.md', userInput, (error) =>
     error ? console.log('Error!') : console.log('Success!'));  //error handling is a required argument
 }
 
@@ -23,10 +20,6 @@ const promptUser = () => {
 }
 
 
-const myMD = 'test1' +
-    'test2' +
-    'test3' +
-    `hello world`
 
 //Create a function to initialize app
 const init = () => {
