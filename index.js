@@ -11,7 +11,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js')
 //Create a function to write README file
 const writeToFile = (userInput) => {
     //write output to README.md file
-    fs.writeFile('README.md', JSON.stringify(userInput), (error) =>
+    fs.writeFile('README.md', myMD, (error) =>
     error ? console.log('Error!') : console.log('Success!'));  //error handling is a required argument
 }
 
@@ -23,6 +23,11 @@ const promptUser = () => {
 }
 
 
+const myMD = `
+    # testing1
+    testing2
+    testing3
+    `
 
 //Create a function to initialize app
 const init = () => {
