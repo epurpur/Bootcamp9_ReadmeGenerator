@@ -63,7 +63,10 @@ const generateMarkdown = (data) =>  {
 
   ## Table of Contents
 
-    - [Bottom](#bottom)
+    - [Name] (#name)
+    - [License] (#bottom)
+    - [Installation] (#installation)
+    - [Usage] (#bottom)
 
   ## Installation
 
