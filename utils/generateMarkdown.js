@@ -57,12 +57,13 @@ const generateMarkdown = (data) =>  {
 
   ${data.name}
 
-  ## License Badge:
+  ## License
 
   ${licenseBadge} : [View License](${licenseLinkURL})
 
   ## Table of Contents
 
+    - [Bottom](#bottom)
 
   ## Installation
 
@@ -72,7 +73,7 @@ const generateMarkdown = (data) =>  {
 
   helo
 
-  ## License
+  ## Bottom {#bottom}
 
   test
   `
