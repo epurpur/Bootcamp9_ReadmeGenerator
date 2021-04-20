@@ -53,34 +53,33 @@ const generateMarkdown = (data) =>  {
   const licenseLinkURL = renderLicenseLink(data.license);
   
   return `
-  # Project Name:
+    # Project Name:
 
-  ${data.name}
+    ${data.name}
 
-  ## License
+    ## License
 
-  ${licenseBadge} : [View License](${licenseLinkURL})
+    ${licenseBadge} : [View License](${licenseLinkURL})
 
-  ## Table of Contents
+    ## Table of Contents
 
-    - [Titles](#titles)
-    - [Name] (#name)
-    - [License](##bottom)
-    - [Installation] (#installation)
-    - [Usage] (#bottom)
+    - [Title](#Project-Name)
+    - [License](#License)
+    - [Installation](#Installation)
+    - [Usage](#Usage)
 
-  ## Installation
+    ## Installation
 
-  
+      \`npm i\`
 
-  ## Usage
+    ## Usage
 
-  helo
+    helo
 
-  # Titles 
+    # Titles 
 
-  test
-  `
+    test
+    `
 
 }
 
