@@ -32,18 +32,22 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) =>  {
-  return `
-  ${data.name}
   
+  const licenseBadge = renderLicenseBadge(name.license)
+  return `
+  Project Name:
+  # ${data.name}
+
+  License Badge:
+  ${licenseBadge}
+
   # testing
   testing2
 
   testing3
   `
+
 }
-
-const markdown = (myInput) => {return myInput}
-
 
 
 module.exports = {
