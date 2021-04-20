@@ -23,11 +23,10 @@ const promptUser = () => {
 }
 
 
-const myMD = `
-    # testing1
-    testing2
-    testing3
-    `
+const myMD = 'test1' +
+    'test2' +
+    'test3' +
+    `hello world`
 
 //Create a function to initialize app
 const init = () => {
