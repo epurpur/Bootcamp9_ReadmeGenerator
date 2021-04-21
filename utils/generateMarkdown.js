@@ -49,13 +49,17 @@ const renderLicenseLink = (license) => {
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) =>  {
   
-  const licenseBadge = renderLicenseBadge(data.license);
-  const licenseLinkURL = renderLicenseLink(data.license);
+  // destructure data which is returned from user input
+  const { name, license, description, installation, usage, contributions, tests, questions } = data;
+  console.log(name, license, description, installation, usage, contributions, tests, questions);
+
+  const licenseBadge = renderLicenseBadge(license);
+  const licenseLinkURL = renderLicenseLink(license);
   
   return `
     # Project Name:
 
-    ${data.name}
+    ${name}
 
     ## License
 
@@ -65,20 +69,32 @@ const generateMarkdown = (data) =>  {
 
     - [Title](#Project-Name)
     - [License](#License)
+    - [Description](#Description)
     - [Installation](#Installation)
     - [Usage](#Usage)
+    - [Contributions](#Contributions)
+    - [Tests](#Tests)
+    - [Questions](#Questions)
 
     ## Installation
 
-      \`npm i\`
+      ${installation}
 
     ## Usage
 
-    helo
+    ${usage}
 
-    # Titles 
+    ## Contributions 
 
-    test
+    ${contributions}
+
+    ## Tests 
+
+    ${tests}
+
+    ## Questions 
+
+    For issues, questions, and comments please visit [https://github.com/${questions}](https://github.com/${questions}) 
     `
 
 }

@@ -18,35 +18,35 @@ exports.questionBank = [
         ],
         default: 'None'
     },
-    // {
-    //     type: 'input',
-    //     name: 'description',
-    //     message: "Write project description: "   
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'instructions',
-    //     message: "Write installation instructions: "   
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'usage',
-    //     message: "Enter project usage information: "   
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'contribution',
-    //     message: "Enter project contribution guidelines: "   
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'test',
-    //     message: "Enter project test instructions: "   
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'github',
-    //     message: "Enter your github username: "   
-    // },
+    {
+        type: 'input',
+        name: 'description',
+        message: "Write project description: "   
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: "Write installation instructions: "   
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: "Enter project usage information: "   
+    },
+    {
+        type: 'input',
+        name: 'contributions',
+        message: "Enter project contribution guidelines: "   
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: "Enter project test instructions: "   
+    },
+    {
+        type: 'input',
+        name: 'questions',
+        message: "Enter your github username as contact information: "   
+    },
 ];
 
