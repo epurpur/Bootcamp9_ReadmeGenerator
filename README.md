@@ -1,4 +1,21 @@
 
+# README Generator
+
+My task is to create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). When running the program in Node.js, the user's information is collected and added to the markdown document.
+
+## Walkthrough video
+
+I was not able to use Screencastify to record my video walkthrough so I used Zoom's screen recording feature instead. 
+View the video walkthrough here:
+[https://virginia.zoom.us/rec/share/w4HwgEQgq6_Daeldv-igmFmhI9N-yNOBTpYAuoImA61TZQVV6btfGA_4I6PD.3yIcF35lf9A4k5Xr](https://virginia.zoom.us/rec/share/w4HwgEQgq6_Daeldv-igmFmhI9N-yNOBTpYAuoImA61TZQVV6btfGA_4I6PD.3yIcF35lf9A4k5Xr)
+Passcode: R73nzj*z
+
+## Result
+
+Below is an example of the result when running the program.
+
+--------------------------------
+
   # Project Name:
 
   README Generator
