@@ -1,11 +1,11 @@
 
   # Project Name:
 
-  MyProject
+  README Generator
 
   ## License
 
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) : [View License](https://www.gnu.org/licenses/gpl-3.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) : [View License](https://opensource.org/licenses/MIT)
 
   ## Table of Contents
 
@@ -18,25 +18,29 @@
   - [Tests](#Tests)
   - [Questions](#Questions)
 
+  ## Description
+
+  This is meant to quickly create a professional readme for a github repository. This way a user can spend more time on their code and less time on writing tedious documentation.
+
   ## Installation
 
-  Run the following commands in the terminal
+  Navigate to the root directory of this repository and run the following commands to install necessary dependencies:
 
     npm i
 
   ## Usage
 
-  use this
+  none yet
 
   ## Contributions 
 
-  contribute here
+  none yet
 
   ## Tests 
 
-  test this
+  none yet
 
   ## Questions 
 
-  For issues, questions, and comments please visit [https://github.com/epurpur](https://github.com/epurpur) 
+  For issues, questions, and comments please contact epurpur@gmail.com or visit [https://github.com/epurpur](https://github.com/epurpur) 
   

@@ -3,6 +3,7 @@ const renderLicenseBadge = (license) => {
 
   let licenseMarkdownText;
 
+  //evaluate user input for license choices. Return image link accordingly
   switch (license) {
     case 'MIT License':
       licenseMarkdownText = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
@@ -27,6 +28,7 @@ const renderLicenseLink = (license) => {
 
   let licenseLinkURL;
 
+  //evaluate user input for license choices. Return URL to more information accordingly
   switch (license) {
     case 'MIT License':
       licenseLinkURL = 'https://opensource.org/licenses/MIT';
@@ -46,12 +48,12 @@ const renderLicenseLink = (license) => {
 }
 
 
-// TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) =>  {
+  //generates markdown for README.md file
   
   // destructure data which is returned from user input
-  const { name, license, description, installation, usage, contributions, tests, questions } = data;
-  console.log(name, license, description, installation, usage, contributions, tests, questions);
+  const { name, license, description, installation, usage, contributions, tests, email, questions } = data;
+  // console.log(name, license, description, installation, usage, contributions, tests, email, questions);
 
   const licenseBadge = renderLicenseBadge(license);
   const licenseLinkURL = renderLicenseLink(license);
@@ -76,9 +78,13 @@ const generateMarkdown = (data) =>  {
   - [Tests](#Tests)
   - [Questions](#Questions)
 
+  ## Description
+
+  ${description}
+
   ## Installation
 
-  Run the following commands in the terminal
+  Navigate to the root directory of this repository and run the following commands to install necessary dependencies:
 
     ${installation}
 
@@ -96,12 +102,12 @@ const generateMarkdown = (data) =>  {
 
   ## Questions 
 
-  For issues, questions, and comments please visit [https://github.com/${questions}](https://github.com/${questions}) 
+  For issues, questions, and comments please contact ${email} or visit [https://github.com/${questions}](https://github.com/${questions}) 
   `
 
 }
 
-
+//export generateMarkdown function to use in other modules
 module.exports = {
   generateMarkdown: generateMarkdown,
 }

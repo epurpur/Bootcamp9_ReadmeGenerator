@@ -1,5 +1,6 @@
 
 //Create an array of questions for user input
+//export questionBank for use in other modules
 exports.questionBank = [
     {
         type: 'input',
@@ -42,6 +43,11 @@ exports.questionBank = [
         type: 'input',
         name: 'tests',
         message: "Enter project test instructions: "   
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: "Enter your email address: "   
     },
     {
         type: 'input',

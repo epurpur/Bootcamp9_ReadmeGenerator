@@ -1,6 +1,7 @@
 //Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+//imported modules
 const questionBank = require('./utils/questionBank.js')
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
