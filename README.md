@@ -18,6 +18,8 @@ Below is an example of the result when running the program.
 
 --------------------------------
 
+--------------------------------
+
   # Project Name:
 
   README Generator
