@@ -57,45 +57,47 @@ const generateMarkdown = (data) =>  {
   const licenseLinkURL = renderLicenseLink(license);
   
   return `
-    # Project Name:
+  # Project Name:
 
-    ${name}
+  ${name}
 
-    ## License
+  ## License
 
-    ${licenseBadge} : [View License](${licenseLinkURL})
+  ${licenseBadge} : [View License](${licenseLinkURL})
 
-    ## Table of Contents
+  ## Table of Contents
 
-    - [Title](#Project-Name)
-    - [License](#License)
-    - [Description](#Description)
-    - [Installation](#Installation)
-    - [Usage](#Usage)
-    - [Contributions](#Contributions)
-    - [Tests](#Tests)
-    - [Questions](#Questions)
+  - [Title](#Project-Name)
+  - [License](#License)
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Contributions](#Contributions)
+  - [Tests](#Tests)
+  - [Questions](#Questions)
 
-    ## Installation
+  ## Installation
 
-      ${installation}
+  Run the following commands in the terminal
 
-    ## Usage
+    ${installation}
 
-    ${usage}
+  ## Usage
 
-    ## Contributions 
+  ${usage}
 
-    ${contributions}
+  ## Contributions 
 
-    ## Tests 
+  ${contributions}
 
-    ${tests}
+  ## Tests 
 
-    ## Questions 
+  ${tests}
 
-    For issues, questions, and comments please visit [https://github.com/${questions}](https://github.com/${questions}) 
-    `
+  ## Questions 
+
+  For issues, questions, and comments please visit [https://github.com/${questions}](https://github.com/${questions}) 
+  `
 
 }
 

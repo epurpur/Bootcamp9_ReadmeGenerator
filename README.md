@@ -1,40 +1,42 @@
 
-    # Project Name:
+  # Project Name:
 
-    Project 1
+  MyProject
 
-    ## License
+  ## License
 
-    [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) : [View License](https://opensource.org/licenses/Apache-2.0)
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) : [View License](https://www.gnu.org/licenses/gpl-3.0)
 
-    ## Table of Contents
+  ## Table of Contents
 
-    - [Title](#Project-Name)
-    - [License](#License)
-    - [Description](#Description)
-    - [Installation](#Installation)
-    - [Usage](#Usage)
-    - [Contributions](#Contributions)
-    - [Tests](#Tests)
-    - [Questions](#Questions)
+  - [Title](#Project-Name)
+  - [License](#License)
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Contributions](#Contributions)
+  - [Tests](#Tests)
+  - [Questions](#Questions)
 
-    ## Installation
+  ## Installation
 
-      install this
+  Run the following commands in the terminal
 
-    ## Usage
+    npm i
 
-    use this
+  ## Usage
 
-    ## Contributions 
+  use this
 
-    make this
+  ## Contributions 
 
-    ## Tests 
+  contribute here
 
-    test this
+  ## Tests 
 
-    ## Questions 
+  test this
 
-    For issues, questions, and comments please visit [https://github.com/epurpur](https://github.com/epurpur) 
-    
+  ## Questions 
+
+  For issues, questions, and comments please visit [https://github.com/epurpur](https://github.com/epurpur) 
+  
